@@ -1,172 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.logotipo{
-    padding: 0px;
-    font-weight: 600;
+.logotipo {
+  padding: 0px;
+  font-weight: 600;
 }
-.envoltura-cabezado{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 110px;
-    display: flex;
-    background-color: black;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
+.envoltura-cabezado {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
-.menu{
-    display: flex;
-    gap: 45px;
-    margin-right: 20px;
-    align-items: center;
+.menu {
+  display: flex;
+  gap: 45px;
+  margin-right: 20px;
+  align-items: center;
 }
-.menu > a{
-    color: silver;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    
+.menu > a {
+  color: silver;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
-.subtitulo-menu:hover{
-    color: white;
+.subtitulo-menu:hover {
+  color: white;
 }
 main {
-    flex: 1;
-    margin-top: 120px;
+  flex: 1;
+  margin-top: 120px;
 }
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
-.icono-menu{
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-}
-.formulario-logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: auto;
-    gap: 30px;
-    padding: 20px;
-    flex-direction: row-reverse;
-}
-.formulario-imagen{
-    flex:1;
-}
-.formulario-imagen img {
-    width: 100%;               
-    height: auto;              
-    display: block;
+.icono-menu {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 }
 
-.encabezado-formulario{
-    flex: 1;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
-    font-size: 40px;
-
-}
-.texto-a-otro-link{
-    padding: 1rem;
-    display: center;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightgray;
-    height: 80px;
-}
-
-.texto-a-otro-link > h3{
-    text-align: center;
-}
-.formulario{
-    margin-left: 450px;
-    margin-right: 450px;
-}
-.seleccion-blanco{
-    text-align: center;
-}
-.form-opciones{
-    width: 100%;
-    padding: 16px;
-    border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.escribir-datos{
-    background-color: rgb(225, 221, 221);
-    width: 100%;
-    padding: 16px;
-    border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.escribir-datos:focus{
-    background-color: white;
-}
-#termino-form{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-}
-#termino-acepto{
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 20px;
-    font-size: 14px;
-    align-items: center;
-    gap: 10px;
-}
-#boton-form{
-    display: flex;
-    background-color: rgb(146, 230, 95);
-    border: none;
-    padding: 15px 40px;
-    border-radius: 30px;
-    float: right;
-    margin-right: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 /*=============footer==================*/
-#visitanos-en{
-    padding: 20px;
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    
-    
+#visitanos-en {
+  padding: 20px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
-#visitanos-en > p{
-    color:white;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#visitanos-en > p {
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#hipervinculos-extra{
-    display: flex;
-    gap: 10px;
+#hipervinculos-extra {
+  display: flex;
+  gap: 10px;
 }
-#derechos > p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-weight: 500;
-    margin-left: 60px;
-    font-size: 13px;
+#derechos > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: 500;
+  margin-left: 60px;
+  font-size: 13px;
 }
-#deco-logo{
-    margin-right: 60px;
+#deco-logo {
+  margin-right: 60px;
 }
-#derechos{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    background-color: rgb(40, 40, 59);
-    width: 100%;
-    height: 110px;
-    justify-content: space-between;
+#derechos {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(40, 40, 59);
+  width: 100%;
+  height: 110px;
+  justify-content: space-between;
 }

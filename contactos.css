@@ -1,0 +1,82 @@
+.formulario-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  gap: 30px;
+  padding: 20px;
+  flex-direction: row-reverse;
+}
+.formulario-imagen {
+  flex: 1;
+}
+.formulario-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.encabezado-formulario {
+  flex: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  font-size: 40px;
+}
+.texto-a-otro-link {
+  padding: 1rem;
+  display: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightgray;
+  height: 80px;
+}
+
+.texto-a-otro-link > h3 {
+  text-align: center;
+}
+.formulario {
+  display: flow;
+  flex-direction: column;
+  text-align: center;
+}
+.seleccion-blanco {
+  text-align: center;
+}
+.form-opciones {
+  width: 50%;
+  padding: 16px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.escribir-datos {
+  background-color: rgb(225, 221, 221);
+  width: 50%;
+  padding: 16px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.escribir-datos:focus {
+  background-color: white;
+}
+#termino-form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
+#termino-acepto {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20px;
+  font-size: 14px;
+  align-items: center;
+  gap: 10px;
+}
+#boton-form {
+  display: flex;
+  background-color: rgb(146, 230, 95);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  float: right;
+  margin-right: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
