@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="sucursales.css">
-</head>
-<body>
-     <header class="envoltura-cabezado">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/sucursales.css" />
+  </head>
+  <body>
+    <header class="envoltura-cabezado">
       <div class="logotipo">
         <a href="index.html" id="link-logo"
           ><img src="imagenes/logo6.png" alt="Logo" width="300"
@@ -23,96 +23,110 @@
       </div>
     </header>
     <div id="contenedor-principal">
-     <aside class="sidebar">
+      <aside class="sidebar">
         <h3>Elige tu ubicación</h3>
         <select class="selector">
-            <option>Región</option>
-            <option>Lima</option>
-            <option>Arequipa</option>
-            <option>Tacna</option>
-            <option>Cusco</option>
+          <option>Región</option>
+          <option>Lima</option>
+          <option>Arequipa</option>
+          <option>Tacna</option>
+          <option>Cusco</option>
         </select>
 
         <h3>Filtrar por servicios</h3>
-        <label><input type="checkbox"> Todos</label>
-        <label><input type="checkbox"> Ventas</label>
-        <label><input type="checkbox"> Servicios</label>
-        <label><input type="checkbox"> Repuestos</label>
-    </aside>
+        <label><input type="checkbox" /> Todos</label>
+        <label><input type="checkbox" /> Ventas</label>
+        <label><input type="checkbox" /> Servicios</label>
+        <label><input type="checkbox" /> Repuestos</label>
+      </aside>
 
-    <!-- Contenido principal -->
-     <main class="content">
-
+      <!-- Contenido principal -->
+      <main class="content">
         <h1>RED DE CONCESIONARIOS</h1>
 
         <!-- CARD 1 -->
         <div class="card">
-            <div class="card-img" style="--img:url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT2T4tOJqZZwpAV3CZgven0TJjOieoi7mj43UmPxYxow4zv6t4NTlJw4UOeamvRa68DXOX78w01UqnCCtk4E2b0g4O2&s=19')"></div>
-            <div class="card-body">
-                <span class="tag">Ventas</span>
-                <h2>MT | LIMA</h2>
-                <p class="direccion">Av. Independencia</p>
-                <div class="seccion">
-                    <h4>Ventas</h4>
-                    <p>Lunes a Viernes: 09:00 - 20:00</p>
-                    <p>Sábado: 10:00 - 18:00</p>
-                    <p>Domingo: 10:00 - 15:00</p>
-                </div>
-                
+          <div
+            class="card-img"
+            style="
+              --img: url(&quot;https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT2T4tOJqZZwpAV3CZgven0TJjOieoi7mj43UmPxYxow4zv6t4NTlJw4UOeamvRa68DXOX78w01UqnCCtk4E2b0g4O2&s=19&quot;);
+            "
+          ></div>
+          <div class="card-body">
+            <span class="tag">Ventas</span>
+            <h2>MT | LIMA</h2>
+            <p class="direccion">Av. Independencia</p>
+            <div class="seccion">
+              <h4>Ventas</h4>
+              <p>Lunes a Viernes: 09:00 - 20:00</p>
+              <p>Sábado: 10:00 - 18:00</p>
+              <p>Domingo: 10:00 - 15:00</p>
             </div>
+          </div>
         </div>
 
         <!-- CARD 2 -->
         <div class="card">
-            <div class="card-img" style="--img:url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcS4eMoYECG9ZRBgz4LIxSdsl9rp_0buQjSKsWrCjelhUdrbmA26HJ401OB2phJ6ISFEQHi4s59dQUhUAaLz1FQi9yU&s=19')"></div>
-            <div class="card-body">
-                <span class="tag">Ventas</span>
-                <span class="tag">Repuestos</span>
-                <h2>MT | AREQUIPA</h2>
-                <p class="direccion">Av. Alfredo Benavides</p>
-                <div class="seccion">
-                    <h4>Servicios</h4>
-                    <p>Lunes a Viernes: 07:00 - 17:00</p>
-                    <p>Sábado: 07:00 - 13:00</p>
-                </div>
-                
+          <div
+            class="card-img"
+            style="
+              --img: url(&quot;https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcS4eMoYECG9ZRBgz4LIxSdsl9rp_0buQjSKsWrCjelhUdrbmA26HJ401OB2phJ6ISFEQHi4s59dQUhUAaLz1FQi9yU&s=19&quot;);
+            "
+          ></div>
+          <div class="card-body">
+            <span class="tag">Ventas</span>
+            <span class="tag">Repuestos</span>
+            <h2>MT | AREQUIPA</h2>
+            <p class="direccion">Av. Alfredo Benavides</p>
+            <div class="seccion">
+              <h4>Servicios</h4>
+              <p>Lunes a Viernes: 07:00 - 17:00</p>
+              <p>Sábado: 07:00 - 13:00</p>
             </div>
+          </div>
         </div>
 
         <!-- CARD 3 -->
         <div class="card">
-            <div class="card-img" style="--img:url('https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyG2kpF_hTf0fHGHjyahPWeEbVtsQdJQM33Fam4hJRxd5wIfhOT-Oby_lxWpJaI5l7jdO3DWKMazR3LVoZTk0FxA7C4g8LeabRBKx-01chhpxjf9cXd9llZQ5lSY5MyR_rrJvNyBA=w675-h390-n-k-no')"></div>
-            <div class="card-body">
-                <span class="tag">Ventas</span>
-                <h2>MT | TACNA</h2>
-                <p class="direccion">Av. Tacna</p>
-                <div class="seccion">
-                    <h4>Ventas</h4>
-                    <p>Lunes a Sábado: 09:00 - 18:00</p>
-                </div>
-                
+          <div
+            class="card-img"
+            style="
+              --img: url(&quot;https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyG2kpF_hTf0fHGHjyahPWeEbVtsQdJQM33Fam4hJRxd5wIfhOT-Oby_lxWpJaI5l7jdO3DWKMazR3LVoZTk0FxA7C4g8LeabRBKx-01chhpxjf9cXd9llZQ5lSY5MyR_rrJvNyBA=w675-h390-n-k-no&quot;);
+            "
+          ></div>
+          <div class="card-body">
+            <span class="tag">Ventas</span>
+            <h2>MT | TACNA</h2>
+            <p class="direccion">Av. Tacna</p>
+            <div class="seccion">
+              <h4>Ventas</h4>
+              <p>Lunes a Sábado: 09:00 - 18:00</p>
             </div>
+          </div>
         </div>
 
         <!-- CARD 4 -->
         <div class="card">
-            <div class="card-img" style="--img:url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQ0TOO_XUDmDKBTlSUZMRVQXIpk7PXDOi5sfMPm8knokqKyReS8qV0chMrsxkATGf0VzJ6vLqtihiv-PI_ciEMuQqE&s=19')"></div>
-            <div class="card-body">
-                <span class="tag">Servicios</span>
-                <span class="tag">Repuestos</span>
-                <h2>MT | CUSCO</h2>
-                <p class="direccion">Av. La Marina </p>
-                <div class="seccion">
-                    <h4>Servicios</h4>
-                    <p>Lunes a Viernes: 08:00 - 17:30</p>
-                    <p>Sábado: 08:00 - 13:00</p>
-                </div>
-                
+          <div
+            class="card-img"
+            style="
+              --img: url(&quot;https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQ0TOO_XUDmDKBTlSUZMRVQXIpk7PXDOi5sfMPm8knokqKyReS8qV0chMrsxkATGf0VzJ6vLqtihiv-PI_ciEMuQqE&s=19&quot;);
+            "
+          ></div>
+          <div class="card-body">
+            <span class="tag">Servicios</span>
+            <span class="tag">Repuestos</span>
+            <h2>MT | CUSCO</h2>
+            <p class="direccion">Av. La Marina</p>
+            <div class="seccion">
+              <h4>Servicios</h4>
+              <p>Lunes a Viernes: 08:00 - 17:30</p>
+              <p>Sábado: 08:00 - 13:00</p>
             </div>
+          </div>
         </div>
-
-    </main>
-   </div>
+      </main>
+    </div>
     <footer>
       <div id="visitanos-en">
         <p>Visitanos tambien en:</p>
@@ -154,5 +168,6 @@
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>
+
