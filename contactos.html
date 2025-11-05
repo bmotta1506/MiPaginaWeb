@@ -1,153 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MT | Formulario</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="imagenes/logo2.png">
-</head>
-<body>
-    <header class="envoltura-cabezado"> 
-       <div class="logotipo">
-            <a href="auto.html" id="link-logo" ><img src="imagenes/logo6.png" alt="Logo" width="300"></a>
-       </div>
-       <div class="menu">
-            <a href="modelos.html" class="subtitulo-menu" target="_blank">MODELOS</a>
-            <a href="" class="subtitulo-menu" target="_blank">SERVICIOS</a>
-            <a href="" class="subtitulo-menu" target="_blank">SUCURSALES</a>
-            <a href="contactos.html" class="subtitulo-menu" target="_blank">CONTACTOS</a>
-            <img src="imagenes/lupa.png" alt="lupa" class="icono-menu">
-       </div>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="imagenes/logo2.png" />
+  </head>
+  <body>
+    <header class="envoltura-cabezado">
+      <div class="logotipo">
+        <a href="index.html" id="link-logo"
+          ><img src="imagenes/logo6.png" alt="Logo" width="300"
+        /></a>
+      </div>
+      <div class="menu">
+        <a href="modelos.html" class="subtitulo-menu">MODELOS</a>
+        <a href="" class="subtitulo-menu">SERVICIOS</a>
+        <a href="" class="subtitulo-menu">SUCURSALES</a>
+        <a href="contactos.html" class="subtitulo-menu">CONTACTOS</a>
+        <img src="imagenes/lupa.png" alt="lupa" class="icono-menu" />
+      </div>
     </header>
     <main>
-        <article>
-            <div class="formulario-logo">
-                <picture class="formulario-imagen">
-                    <img src="imagenes/carro-naranja.jpg" alt="carro">
-                </picture>
-                <div class="encabezado-formulario">
-                    <h1>FORMULARIO DE CONTACTO</h1>
-                        <P>Si deseas ponerte en contacto llena el siguiente formulario.</P>
-
-                </div>
-            </div>
-        </article>
-        <article>
-            <div class="texto-a-otro-link">
-                <h3>ELIGE TU VEHICULO Y VERSIÓN INGRESANDO AL SIGUIENTE ENLACE:</h3>
-            </div>
-        </article>
-        <br><br>
-        <section class="formulario">
-            <form action="">
-                    <select name="form-opciones" class="form-opciones">
-                        <option value="" class="seleccion-blanco">-- Seleccione un motivo --</option>
-                        <option value="Cotizacion-unidad">Cotizacion de unidad</option>
-                        <option value="Cotizacion-respuesto">Cotizacion de repuesto</option>
-                        <option value="Agendamiento-cita">Agendamiento de cita</option>
-                        <option value="Consulta-Sugerencia">Consulta o sugerencia</option>
-                    </select>
-                        <br><br>
-                    <input type="text" name="Nombres" class="escribir-datos" placeholder="Nombre y Apellido*" required>  
-                        <br><br>
-                    <select name="form-opciones" class="form-opciones">
-                        <option value="" class="seleccion-blanco">-- Seleccione tipo de documento--</option>
-                        <option value="DNI">DNI</option>
-                        <option value="RUC">RUC</option>
-                        <option value="Carnet-extranjeria">Carnet de extranjeria</option>
-                        <option value="Pasaporte">Pasaporte</option>
-                    </select>
-                        <br><br>
-                    <input type="text" name="celular" class="escribir-datos" placeholder="Celular*" required>  
-                        <br><br>
-                    <input type="text" name="email" class="escribir-datos" placeholder="Email*"> 
-                        <br><br>
-                    <select name="Ciudad" class="form-opciones">
-                        <option value="" class="seleccion-blanco">--Seleccione su ciudad--</option>
-                        <option value="Lima">Lima</option>
-                        <option value="Arequipa">Arequipa</option>
-                        <option value="Ancash">Ancash</option>
-                        <option value="La Libertad">La Libertad</option>
-                        <option value="Cajamarca">Cajamarca</option>
-                        <option value="Piura">Piura</option>
-                        <option value="Junin">Junin</option>
-                        <option value="Tacna">Tacna</option>
-                        <option value="Huanuco">Huanuco</option>
-                        <option value="Cusco">Cusco</option>
-                        <option value="Puno">Puno</option>
-                        <option value="Ica">Ica</option>
-                        <option value="San Martin">San Martin</option>
-                        <option value="Lambayeque">Lambayeque</option>
-                    </select>  
-                        <br><br>
-                    <select name="Distrito" class="form-opciones">
-                        <option value="" class="seleccion-blanco">--Seleccione su distrito--</option>
-                        <option value="La Molina">La Molina</option>
-                        <option value="Santiago de Surco">Santiago de Surco</option>
-                        <option value="Arequipa">Arequipa</option>
-                        <option value="Ate">Ate</option>
-                        <option value="Chimbote">Chimbote</option>
-                        <option value="Trujillo">Trujillo</option>
-                        <option value="Cajamarca">Cajamarca</option>
-                        <option value="Jaen">Jaen</option>
-                        <option value="Piura">Piura</option>
-                        <option value="Pichanaqui">Pichanaqui</option>
-                        <option value="Tacna">Tacna</option>
-                        <option value="San Juan de Miraflores">San Juan de Miraflores</option>
-                        <option value="Independencia">Independencia</option>
-                        <option value="San Miguel">San Miguel</option>
-                        <option value="La Victoria">La Victoria</option>
-                        <option value="Huanuco">Huanuco</option>
-                        <option value="Huancayo">Huancayo</option>
-                        <option value="Cusco">Cusco</option>
-                        <option value="Juliaca">Juliaca</option>
-                        <option value="Chincha Alta">Chincha Alta</option>
-                        <option value="Puno">Puno</option>
-                        <option value="Tarapoto">Tarapoto</option>
-                        <option value="Ica">Ica</option>
-                        <option value="Chiclayo">Chiclayo</option>
-                        <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
-                        <option value="Surquillo">Surquillo</option>
-                        <option value="Cerro Colorado">Cerro Colorado</option>
-                        <option value="Paucarpata">Paucarpata</option>
-                        <option value="Cayma">Cayma</option>
-                    </select>
-                        <br><br>
-                    <input type="text" name="comentario" class="escribir-datos" placeholder="Añada un comentario/pregunta/sugerencia">
-                        <br><br><br>
-                    <p id="termino-form">Mis datos personales serán tratados conforme a la Cláusula Informativa que he leído.</p>
-                        <br>
-                    <div id="termino-acepto">
-                        <input type="checkbox" name="terminos" id="marcar-terminos">
-                        <label for="checkbox">Acepto termino y condiciones.</label>
-                        
-                    </div>
-                        <br><br>
-                    <button type="submit" id="boton-form">Enviar Formulario</button>
-
-            </form>
-        </section>
+      <article>
+        <div class="formulario-logo">
+          <picture class="formulario-imagen">
+            <img src="imagenes/carro-naranja.jpg" alt="carro" />
+          </picture>
+          <div class="encabezado-formulario">
+            <h1>FORMULARIO DE CONTACTO</h1>
+            <p>Si deseas ponerte en contacto llena el siguiente formulario.</p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="texto-a-otro-link">
+          <h3>ELIGE TU VEHICULO Y VERSIÓN INGRESANDO AL SIGUIENTE ENLACE:</h3>
+        </div>
+      </article>
+      <br /><br />
+      <section class="formulario">
+        <form action="">
+          <select name="form-opciones" class="form-opciones">
+            <option value="" class="seleccion-blanco">
+              -- Seleccione un motivo --
+            </option>
+            <option value="Cotizacion-unidad">Cotizacion de unidad</option>
+            <option value="Cotizacion-respuesto">Cotizacion de repuesto</option>
+            <option value="Agendamiento-cita">Agendamiento de cita</option>
+            <option value="Consulta-Sugerencia">Consulta o sugerencia</option>
+          </select>
+          <br /><br />
+          <input
+            type="text"
+            name="Nombres"
+            class="escribir-datos"
+            placeholder="Nombre y Apellido*"
+            required
+          />
+          <br /><br />
+          <select name="form-opciones" class="form-opciones">
+            <option value="" class="seleccion-blanco">
+              -- Seleccione tipo de documento--
+            </option>
+            <option value="DNI">DNI</option>
+            <option value="RUC">RUC</option>
+            <option value="Carnet-extranjeria">Carnet de extranjeria</option>
+            <option value="Pasaporte">Pasaporte</option>
+          </select>
+          <br /><br />
+          <input
+            type="text"
+            name="celular"
+            class="escribir-datos"
+            placeholder="Celular*"
+            required
+          />
+          <br /><br />
+          <input
+            type="text"
+            name="email"
+            class="escribir-datos"
+            placeholder="Email*"
+          />
+          <br /><br />
+          <select name="Ciudad" class="form-opciones">
+            <option value="" class="seleccion-blanco">
+              --Seleccione su ciudad--
+            </option>
+            <option value="Lima">Lima</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Ancash">Ancash</option>
+            <option value="La Libertad">La Libertad</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Piura">Piura</option>
+            <option value="Junin">Junin</option>
+            <option value="Tacna">Tacna</option>
+            <option value="Huanuco">Huanuco</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Puno">Puno</option>
+            <option value="Ica">Ica</option>
+            <option value="San Martin">San Martin</option>
+            <option value="Lambayeque">Lambayeque</option>
+          </select>
+          <br /><br />
+          <select name="Distrito" class="form-opciones">
+            <option value="" class="seleccion-blanco">
+              --Seleccione su distrito--
+            </option>
+            <option value="La Molina">La Molina</option>
+            <option value="Santiago de Surco">Santiago de Surco</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Ate">Ate</option>
+            <option value="Chimbote">Chimbote</option>
+            <option value="Trujillo">Trujillo</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Jaen">Jaen</option>
+            <option value="Piura">Piura</option>
+            <option value="Pichanaqui">Pichanaqui</option>
+            <option value="Tacna">Tacna</option>
+            <option value="San Juan de Miraflores">
+              San Juan de Miraflores
+            </option>
+            <option value="Independencia">Independencia</option>
+            <option value="San Miguel">San Miguel</option>
+            <option value="La Victoria">La Victoria</option>
+            <option value="Huanuco">Huanuco</option>
+            <option value="Huancayo">Huancayo</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Juliaca">Juliaca</option>
+            <option value="Chincha Alta">Chincha Alta</option>
+            <option value="Puno">Puno</option>
+            <option value="Tarapoto">Tarapoto</option>
+            <option value="Ica">Ica</option>
+            <option value="Chiclayo">Chiclayo</option>
+            <option value="San Juan de Lurigancho">
+              San Juan de Lurigancho
+            </option>
+            <option value="Surquillo">Surquillo</option>
+            <option value="Cerro Colorado">Cerro Colorado</option>
+            <option value="Paucarpata">Paucarpata</option>
+            <option value="Cayma">Cayma</option>
+          </select>
+          <br /><br />
+          <input
+            type="text"
+            name="comentario"
+            class="escribir-datos"
+            placeholder="Añada un comentario/pregunta/sugerencia"
+          />
+          <br /><br /><br />
+          <p id="termino-form">
+            Mis datos personales serán tratados conforme a la Cláusula
+            Informativa que he leído.
+          </p>
+          <br />
+          <div id="termino-acepto">
+            <input type="checkbox" name="terminos" id="marcar-terminos" />
+            <label for="checkbox">Acepto termino y condiciones.</label>
+          </div>
+          <br /><br />
+          <button type="submit" id="boton-form">Enviar Formulario</button>
+        </form>
+      </section>
     </main>
-    <br>
-   <footer>
-        <div id="visitanos-en">
-            <p>Visitanos tambien en: </p>
-            <div id="hipervinculos-extra">
-                <a href="https://www.youtube.com/"><img src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png" alt="logo-yt" width="30px"></a>
-                <a href="https://x.com/"><img src="imagenes/x-logo.png" alt="logo-x" width="30px"></a>
-                <a href="https://www.facebook.com/"><img src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png" alt="logo-fb" width="30px"></a>
-                <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png" alt="logo-ig" width="30px"></a>
-                <a href="https://www.tiktok.com/"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670299.png" alt="logo-tt" width="30px"></a>
-            </div>
+    <br />
+    <footer>
+      <div id="visitanos-en">
+        <p>Visitanos tambien en:</p>
+        <div id="hipervinculos-extra">
+          <a href="https://www.youtube.com/"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png"
+              alt="logo-yt"
+              width="30px"
+          /></a>
+          <a href="https://x.com/"
+            ><img src="imagenes/x-logo.png" alt="logo-x" width="30px"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img
+              src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png"
+              alt="logo-fb"
+              width="30px"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png"
+              alt="logo-ig"
+              width="30px"
+          /></a>
+          <a href="https://www.tiktok.com/"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/3670/3670299.png"
+              alt="logo-tt"
+              width="30px"
+          /></a>
         </div>
-        
-        <div id="derechos">
-            <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
-            <div id="deco-logo">
-                <img src="imagenes/derco.png" alt="logo-derco" width="80px">
-            </div>
+      </div>
+
+      <div id="derechos">
+        <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
+        <div id="deco-logo">
+          <img src="imagenes/derco.png" alt="logo-derco" width="80px" />
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
