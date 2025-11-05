@@ -1,0 +1,11 @@
+#contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+#barra-lateral {
+    background-color: rgb(162, 162, 162);
+}
+#contenido-principal {
+    background-color: white;
+
+}

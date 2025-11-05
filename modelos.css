@@ -13,6 +13,7 @@ body {
     margin: 0 auto; 
     grid-auto-rows: min-content; 
     align-items: start; 
+    margin-top: 100px;
 }
 .vehicle-card {
     background-color: #ffffff; 
