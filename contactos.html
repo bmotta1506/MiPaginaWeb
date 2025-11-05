@@ -158,13 +158,19 @@
           </p>
           <br />
           <div id="termino-acepto">
-            <input type="checkbox" name="terminos" id="marcar-terminos" />
+            <input
+              type="checkbox"
+              name="terminos"
+              id="marcar-terminos"
+              required
+            />
             <label for="checkbox">Acepto termino y condiciones.</label>
           </div>
           <br /><br />
-          <button type="submit" id="boton-form">Enviar Formulario</button>
+          <button id="boton-form" onclick="enviar()">Enviar Formulario</button>
         </form>
       </section>
+      <br /><br />
     </main>
     <br />
     <footer>
@@ -208,5 +214,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/contacto.js"></script>
   </body>
 </html>

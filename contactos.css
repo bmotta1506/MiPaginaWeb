@@ -63,20 +63,17 @@
   font-size: 13px;
 }
 #termino-acepto {
-  display: flex;
+  width: 50%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 20px;
   font-size: 14px;
   align-items: center;
   gap: 10px;
+  float: left;
 }
 #boton-form {
-  display: flex;
   background-color: rgb(146, 230, 95);
   border: none;
   padding: 15px 40px;
   border-radius: 30px;
-  float: right;
-  margin-right: 80px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
