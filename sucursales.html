@@ -9,18 +9,34 @@
   </head>
   <body>
     <header class="envoltura-cabezado">
-      <div class="logotipo">
-        <a href="index.html" id="link-logo"
-          ><img src="imagenes/logo6.png" alt="Logo" width="300"
-        /></a>
-      </div>
-      <div class="menu">
-        <a href="modelos.html" class="subtitulo-menu">MODELOS</a>
-        <a href="" class="subtitulo-menu">SERVICIOS</a>
-        <a href="sucursales.html" class="subtitulo-menu">SUCURSALES</a>
-        <a href="contactos.html" class="subtitulo-menu">CONTACTOS</a>
-        <img src="imagenes/lupa.png" alt="lupa" class="icono-menu" />
-      </div>
+        <figure id="logo">
+            <a href="index.html">
+                <img src="imagenes/logo6.png" alt="MT Motors Logo" width="300">
+            </a>
+        </figure>
+
+        <button id="hamburger" aria-label="Abrir menú">
+            <img src="imagenes/hambur-logo.png" alt="Menú" class="icono-hamburguesa">
+        </button>
+        
+        <nav id="navOficial">
+            <ul>
+                <li>
+                    <a href="modelos.html" class="subtitulo-menu">
+                        MODELOS
+                    </a>
+                </li>
+                <li>
+                    <a href="cuenta.html" class="subtitulo-menu">INICIA SESIÓN</a>
+                </li>
+                <li>
+                    <a href="sucursales.html" class="subtitulo-menu">SUCURSALES</a>
+                </li>
+                <li>
+                    <a href="contactos.html" class="subtitulo-menu">CONTACTOS</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <div id="contenedor-principal">
       <aside class="sidebar">
@@ -127,48 +143,40 @@
         </div>
       </main>
     </div>
-    <footer>
-      <div id="visitanos-en">
-        <p>Visitanos tambien en:</p>
-        <div id="hipervinculos-extra">
-          <a href="https://www.youtube.com/"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png"
-              alt="logo-yt"
-              width="30px"
-          /></a>
-          <a href="https://x.com/"
-            ><img src="imagenes/x-logo.png" alt="logo-x" width="30px"
-          /></a>
-          <a href="https://www.facebook.com/"
-            ><img
-              src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png"
-              alt="logo-fb"
-              width="30px"
-          /></a>
-          <a href="https://www.instagram.com/"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png"
-              alt="logo-ig"
-              width="30px"
-          /></a>
-          <a href="https://www.tiktok.com/"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/512/3670/3670299.png"
-              alt="logo-tt"
-              width="30px"
-          /></a>
+    <footer class="pie-pagina">
+        <div class="footer-contenedor">
+            <div id="visitanos-en">
+                <p>Visítanos también en:</p>
+                <div id="hipervinculos-extra">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png" alt="YouTube" class="icon-social">
+                    </a>
+                    <a href="https://x.com/" target="_blank">
+                        <img src="imagenes/x-logo.png" alt="X" class="icon-social">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png" alt="Facebook" class="icon-social">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png" alt="Instagram" class="icon-social">
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670299.png" alt="TikTok" class="icon-social">
+                    </a>
+                </div>
+            </div>
+
+            <hr class="separador-footer">
+            <div id="derechos">
+                <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
+                <div id="deco-logo">
+                    <img src="imagenes/derco.png" alt="logo-derco">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="herramientas-footer"></div>
-      <div id="derechos">
-        <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
-        <div id="deco-logo">
-          <img src="imagenes/derco.png" alt="logo-derco" width="80px" />
-        </div>
-      </div>
     </footer>
     <script src="scripts/sucursales.js"></script>
-  </body>
+    <script src="scripts/script.js"></script>
+  </body>             
 </html>
 
