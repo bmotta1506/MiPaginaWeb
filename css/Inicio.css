@@ -99,6 +99,9 @@ body {
     padding: 30px;
     clip-path: none;
   }
+  .btn-cotizar {
+    margin: 25px auto 0;
+  }
   .safety-section {
     flex-direction: column-reverse;
   }
@@ -106,4 +109,67 @@ body {
     padding-right: 0;
     padding-top: 30px;
   }
+  .reseñas h2 {
+    font-size: 1.8em;
+  }
+  .card-reseña {
+    max-width: 100%;
+  }
+}
+.btn-cotizar {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 40px;
+  background-color: #c00; 
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-cotizar:hover {
+  background-color: #900;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.reseñas {
+  padding: 70px 5%;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+.reseñas h2 {
+  font-size: 2.2em;
+  color: #c00;
+  margin-bottom: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor-reseñas {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-reseña {
+  background-color: white;
+  padding: 30px;
+  max-width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+}
+.comentario {
+  font-size: 1.05em;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.cliente {
+  font-weight: bold;
+  color: #000;
+}
+.Intro {
+  min-height: 500px;
 }

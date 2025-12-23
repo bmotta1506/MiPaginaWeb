@@ -25,7 +25,7 @@
     <div id="contenedor-principal">
       <aside class="sidebar">
         <h3>Elige tu ubicación</h3>
-        <select class="selector">
+        <select class="selector" id="filtro-region">
           <option>Región</option>
           <option>Lima</option>
           <option>Arequipa</option>
@@ -34,10 +34,10 @@
         </select>
 
         <h3>Filtrar por servicios</h3>
-        <label><input type="checkbox" /> Todos</label>
-        <label><input type="checkbox" /> Ventas</label>
-        <label><input type="checkbox" /> Servicios</label>
-        <label><input type="checkbox" /> Repuestos</label>
+        <label><input type="checkbox" value="Todos" checked/> Todos</label>
+        <label><input type="checkbox" value="Ventas"/> Ventas</label>
+        <label><input type="checkbox" value="Servicios"/> Servicios</label>
+        <label><input type="checkbox" value="Repuestos"/> Repuestos</label>
       </aside>
 
       <!-- Contenido principal -->
@@ -45,7 +45,7 @@
         <h1>RED DE CONCESIONARIOS</h1>
 
         <!-- CARD 1 -->
-        <div class="card">
+        <div class="card" data-region="Lima" data-servicios="Ventas">
           <div
             class="card-img"
             style="
@@ -66,7 +66,7 @@
         </div>
 
         <!-- CARD 2 -->
-        <div class="card">
+        <div class="card" data-region="Arequipa" data-servicios="Ventas Repuestos">
           <div
             class="card-img"
             style="
@@ -87,11 +87,11 @@
         </div>
 
         <!-- CARD 3 -->
-        <div class="card">
+        <div class="card" data-region="Tacna" data-servicios="Ventas">
           <div
             class="card-img"
             style="
-              --img: url(&quot;https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyG2kpF_hTf0fHGHjyahPWeEbVtsQdJQM33Fam4hJRxd5wIfhOT-Oby_lxWpJaI5l7jdO3DWKMazR3LVoZTk0FxA7C4g8LeabRBKx-01chhpxjf9cXd9llZQ5lSY5MyR_rrJvNyBA=w675-h390-n-k-no&quot;);
+              --img: url(&quot;https://peru.info/archivos/publicacion/178-imagen-930171942022.jpg&quot;);
             "
           ></div>
           <div class="card-body">
@@ -106,7 +106,7 @@
         </div>
 
         <!-- CARD 4 -->
-        <div class="card">
+        <div class="card" data-region="Cusco" data-servicios="Servicios Repuestos">
           <div
             class="card-img"
             style="
@@ -168,6 +168,7 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/sucursales.js"></script>
   </body>
 </html>
 

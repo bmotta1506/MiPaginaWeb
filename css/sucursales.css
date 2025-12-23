@@ -145,3 +145,6 @@ h2 {
 footer {
   margin-top: auto;
 }
+.card.oculto {
+  display: none;
+}
