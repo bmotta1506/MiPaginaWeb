@@ -9,19 +9,35 @@
     <link rel="stylesheet" href="css/modelos.css" />
   </head>
   <body>
-    <header class="envoltura-cabezado">
-      <div class="logotipo">
-        <a href="index.html" id="link-logo"
-          ><img src="imagenes/logo6.png" alt="Logo" width="300"
-        /></a>
-      </div>
-      <div class="menu">
-        <a href="modelos.html" class="subtitulo-menu">MODELOS</a>
-        <a href="" class="subtitulo-menu">SERVICIOS</a>
-        <a href="sucursales.html" class="subtitulo-menu">SUCURSALES</a>
-        <a href="contactos.html" class="subtitulo-menu">CONTACTOS</a>
-        <img src="imagenes/lupa.png" alt="lupa" class="icono-menu" />
-      </div>
+   <header class="envoltura-cabezado">
+        <figure id="logo">
+            <a href="index.html">
+                <img src="imagenes/logo6.png" alt="MT Motors Logo" width="300">
+            </a>
+        </figure>
+
+        <button id="hamburger" aria-label="Abrir menú">
+            <img src="imagenes/hambur-logo.png" alt="Menú" class="icono-hamburguesa">
+        </button>
+        
+        <nav id="navOficial">
+            <ul>
+                <li>
+                    <a href="modelos.html" class="subtitulo-menu">
+                        MODELOS
+                    </a>
+                </li>
+                <li>
+                    <a href="cuenta.html" class="subtitulo-menu">INICIA SESIÓN</a>
+                </li>
+                <li>
+                    <a href="sucursales.html" class="subtitulo-menu">SUCURSALES</a>
+                </li>
+                <li>
+                    <a href="contactos.html" class="subtitulo-menu">CONTACTOS</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main class="vehicle-models-container">
       <section class="vehicle-card">
@@ -34,7 +50,7 @@
 
         <div class="card-actions">
           <a href="#" class="btn-action">COTIZAR</a>
-          <a href="#" class="btn-action">VERSIONES</a>
+          <a href="javascript:void(0)" class="btn-action" onclick="abrirModal('CX-90')">VERSIONES</a>
         </div>
       </section>
       <section class="vehicle-card">
@@ -45,7 +61,7 @@
         <p class="vehicle-price">Desde: USD$43,990 - S/ 158.364</p>
         <div class="card-actions">
           <a href="#" class="btn-action">COTIZAR</a>
-          <a href="#" class="btn-action">VERSIONES</a>
+          <a href="javascript:void(0)" class="btn-action" onclick="abrirModal('CX-60')">VERSIONES</a>
         </div>
       </section>
       <section class="vehicle-card">
@@ -56,7 +72,7 @@
         <p class="vehicle-price">Desde: USD$27,290 - S/ 98.244</p>
         <div class="card-actions">
           <a href="#" class="btn-action">COTIZAR</a>
-          <a href="#" class="btn-action">VERSIONES</a>
+          <a href="javascript:void(0)" class="btn-action" onclick="abrirModal('CX-5')">VERSIONES</a>
         </div>
       </section>
       <section class="vehicle-card">
@@ -67,7 +83,7 @@
         <p class="vehicle-price">Desde: USD$23,490 - S/ 84.564</p>
         <div class="card-actions">
           <a href="#" class="btn-action">COTIZAR</a>
-          <a href="#" class="btn-action">VERSIONES</a>
+          <a href="javascript:void(0)" class="btn-action" onclick="abrirModal('CX-30')">VERSIONES</a>
         </div>
       </section>
       <section class="vehicle-card">
@@ -78,7 +94,7 @@
         <p class="vehicle-price">Desde: USD$22,640 - S/ 81.504</p>
         <div class="card-actions">
           <a href="#" class="btn-action">COTIZAR</a>
-          <a href="#" class="btn-action">VERSIONES</a>
+          <a href="javascript:void(0)" class="btn-action" onclick="abrirModal('CX-3')">VERSIONES</a>
         </div>
       </section>
       <section class="vehicle-card">
@@ -89,7 +105,7 @@
         <p class="vehicle-price">Desde: USD$31,090 - S/ 115.033</p>
         <div class="card-actions">
           <a href="#" class="btn-action">COTIZAR</a>
-          <a href="#" class="btn-action">VERSIONES</a>
+          <a href="javascript:void(0)" class="btn-action" onclick="abrirModal('BT-50')">VERSIONES</a>
         </div>
       </section>
 
@@ -101,7 +117,7 @@
         <p class="vehicle-price">Desde: USD$44,990 - S/ 161.964</p>
         <div class="card-actions">
           <a href="#" class="btn-action">COTIZAR</a>
-          <a href="#" class="btn-action">VERSIONES</a>
+          <a href="javascript:void(0)" class="btn-action" onclick="abrirModal('MX-5')">VERSIONES</a>
         </div>
       </section>
 
@@ -113,50 +129,75 @@
         <p class="vehicle-price">Desde: USD$28,990 - S/ 104.364</p>
         <div class="card-actions">
           <a href="#" class="btn-action">COTIZAR</a>
-          <a href="#" class="btn-action">VERSIONES</a>
+          <a href="javascript:void(0)" class="btn-action" onclick="abrirModal('MT-6')">VERSIONES</a>
         </div>
       </section>
     </main>
-    <footer>
-      <div id="visitanos-en">
-        <p>Visitanos tambien en:</p>
-        <div id="hipervinculos-extra">
-          <a href="https://www.youtube.com/"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png"
-              alt="logo-yt"
-              width="30px"
-          /></a>
-          <a href="https://x.com/"
-            ><img src="imagenes/x-logo.png" alt="logo-x" width="30px"
-          /></a>
-          <a href="https://www.facebook.com/"
-            ><img
-              src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png"
-              alt="logo-fb"
-              width="30px"
-          /></a>
-          <a href="https://www.instagram.com/"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png"
-              alt="logo-ig"
-              width="30px"
-          /></a>
-          <a href="https://www.tiktok.com/"
-            ><img
-              src="https://cdn-icons-png.flaticon.com/512/3670/3670299.png"
-              alt="logo-tt"
-              width="30px"
-          /></a>
-        </div>
-      </div>
+    <footer class="pie-pagina">
+        <div class="footer-contenedor">
+            <div id="visitanos-en">
+                <p>Visítanos también en:</p>
+                <div id="hipervinculos-extra">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png" alt="YouTube" class="icon-social">
+                    </a>
+                    <a href="https://x.com/" target="_blank">
+                        <img src="imagenes/x-logo.png" alt="X" class="icon-social">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png" alt="Facebook" class="icon-social">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png" alt="Instagram" class="icon-social">
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670299.png" alt="TikTok" class="icon-social">
+                    </a>
+                </div>
+            </div>
 
-      <div id="derechos">
-        <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
-        <div id="deco-logo">
-          <img src="imagenes/derco.png" alt="logo-derco" width="80px" />
+            <hr class="separador-footer">
+            <div id="derechos">
+                <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
+                <div id="deco-logo">
+                    <img src="imagenes/derco.png" alt="logo-derco">
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
+    <div id="modalVersiones" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img id="imgModal" src="" alt="Vehículo">
+                </div>
+                <div class="modal-info">
+                    <h2 id="tituloModal">Nombre del Modelo</h2>
+                    <p id="precioModal" class="precio-destacado"></p>
+                    
+                    <h3>Características Principales:</h3>
+                    <ul id="listaCaracteristicas">
+                        </ul>
+                    <div class="modal-tabla">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Versión</th>
+                                    <th>Motor</th>
+                                    <th>Transmisión</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaVersiones">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/modelos.js"></script>
+    
   </body>
 </html>
