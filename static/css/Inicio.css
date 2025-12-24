@@ -1,51 +1,73 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
   margin-top: 110px;
+  background-color: #fff;
 }
+
 .safety-section {
   display: flex;
   align-items: center;
-  padding: 60px 5%;
+  padding: 80px 10%; 
   background-color: #f8f8f8;
+  gap: 20px;
 }
+
 .safety-text {
   flex: 1;
   padding-right: 40px;
 }
+
 .safety-text h2 {
-  font-size: 2.5em;
-  font-weight: 700;
+  font-size: 2.8em; 
+  font-weight: 800;
   color: #000;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
 }
+
 .safety-text p {
-  font-size: 1.1em;
+  font-size: 1.15em;
   color: #555;
+  max-width: 500px;
 }
+
 .safety-image {
   flex: 1;
+  transition: transform 0.5s ease; 
 }
+
+.safety-image:hover {
+  transform: scale(1.02); 
+}
+
 .safety-image img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
+
 .Intro {
   position: relative;
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 50px 0;
+  margin: 0; 
+  overflow: hidden;
 }
+
 .Fondo {
   position: absolute;
   top: 0;
@@ -55,121 +77,134 @@ body {
   overflow: hidden;
   z-index: 1;
 }
+
 .Fondo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: brightness(0.8);
+  filter: brightness(0.7) contrast(1.1); 
 }
+
 .Saludo {
   position: relative;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 40px 5%;
-  max-width: 45%;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  margin-left: 5%;
+  background-color: rgba(255, 255, 255, 0.92); 
+  backdrop-filter: blur(8px); 
+  padding: 60px;
+  max-width: 550px;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.25);
+  margin-left: 8%;
+  border-radius: 4px; 
+  border-left: 8px solid #c00; 
 }
+
 .Saludo h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #c00;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #ccc;
-  padding-bottom: 10px;
-  display: inline-block;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #eee; 
+  padding-bottom: 15px;
+  display: block; 
+  font-weight: 900;
 }
+
 .Saludo p {
-  font-size: 1.1em;
-  color: #444;
+  font-size: 1.2em;
+  color: #1a1a1a;
   line-height: 1.8;
 }
-@media (max-width: 768px) {
-  .Intro {
-    min-height: 400px;
-    justify-content: center;
-  }
-  .Fondo img {
-    filter: brightness(0.7);
-  }
-  .Saludo {
-    max-width: 90%;
-    margin-left: 0;
-    text-align: center;
-    padding: 30px;
-    clip-path: none;
-  }
-  .btn-cotizar {
-    margin: 25px auto 0;
-  }
-  .safety-section {
-    flex-direction: column-reverse;
-  }
-  .safety-text {
-    padding-right: 0;
-    padding-top: 30px;
-  }
-  .reseñas h2 {
-    font-size: 1.8em;
-  }
-  .card-reseña {
-    max-width: 100%;
-  }
-}
+
 .btn-cotizar {
   display: inline-block;
-  margin-top: 30px;
-  padding: 14px 40px;
+  margin-top: 35px;
+  padding: 16px 45px;
   background-color: #c00; 
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Verdana', sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; 
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(204, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
 .btn-cotizar:hover {
-  background-color: #900;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  background-color: #e00;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(204, 0, 0, 0.4);
 }
+
 .reseñas {
-  padding: 70px 5%;
-  background-color: #f8f8f8;
+  padding: 100px 5%;
+  background-color: #fff;
   text-align: center;
 }
+
 .reseñas h2 {
-  font-size: 2.2em;
-  color: #c00;
-  margin-bottom: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5em;
+  color: #000;
+  margin-bottom: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
+
 .contenedor-reseñas {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .card-reseña {
-  background-color: white;
-  padding: 30px;
-  max-width: 320px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  padding: 40px;
+  max-width: 350px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
+
+.card-reseña:hover {
+  border-color: #c00;
+  transform: translateY(-10px);
+}
+
 .comentario {
-  font-size: 1.05em;
-  color: #444;
-  margin-bottom: 20px;
-  line-height: 1.6;
+  font-size: 1.1em;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 25px;
 }
+
 .cliente {
   font-weight: bold;
-  color: #000;
+  color: #c00; 
+  font-size: 0.9em;
+  text-transform: uppercase;
 }
-.Intro {
-  min-height: 500px;
+
+@media (max-width: 768px) {
+  .Intro {
+    min-height: 550px;
+    justify-content: center;
+  }
+  .Saludo {
+    max-width: 92%;
+    margin-left: 0;
+    padding: 40px 25px;
+    text-align: center;
+  }
+  .safety-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .safety-text {
+    padding-right: 0;
+    padding-top: 40px;
+  }
 }
