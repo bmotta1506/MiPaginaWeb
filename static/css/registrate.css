@@ -1,18 +1,16 @@
-/* 1. CENTRADO TOTAL DEL CUERPO */
+
 main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center; 
     align-items: center;     
     min-height: calc(100vh - 210px); 
-    /* Fondo con imagen y capa oscura igual al login */
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
                 url('../imagenes/fondo.jpg') no-repeat center center/cover;
     padding: 40px 20px;
     box-sizing: border-box; 
 }
 
-/* 2. TARJETA DEL FORMULARIO */
 .registro-container {
     background-color: #ffffff;
     padding: 20px 40px;
@@ -23,10 +21,9 @@ main {
     border-top: 5px solid #444;
     box-sizing: border-box; 
     text-align: left;
-    border-radius: 10%; /* Ajustado de 10% a px para que no se deforme en rectángulos */
+    border-radius: 10%; 
 }
 
-/* 3. ENCABEZADO */
 .registro-form h2 {
     font-family: 'Verdana', sans-serif;
     font-size: 28px;
@@ -45,10 +42,9 @@ main {
     text-align: left;
 }
 
-/* 4. ENTRADAS DE TEXTO */
 .input-group {
     width: 100%; 
-    margin-bottom: 20px; /* Reducido un poco para que quepan más campos */
+    margin-bottom: 20px; 
 }
 
 .input-group label {
@@ -78,7 +74,6 @@ main {
     background-color: #fff;
 }
 
-/* 5. BOTÓN REGISTRARSE */
 .btn-registro {
     width: 100%;
     padding: 16px;
@@ -99,7 +94,6 @@ main {
     letter-spacing: 4px;
 }
 
-/* 6. PIE DEL FORMULARIO */
 .form-footer {
     margin-top: 25px;
     display: flex;
@@ -126,7 +120,6 @@ main {
     text-decoration: underline;
 }
 
-/* MEDIA QUERY PARA MÓVILES */
 @media (max-width: 480px) {
     .registro-container {
         padding: 30px 25px;

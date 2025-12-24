@@ -11,16 +11,15 @@ if (loginForm) {
         if (email === "" || password === "") {
             alert("Por favor, complete todos los campos.");
         } else {
-            // 1. Mostrar la alerta de éxito
+
             alert("¡Inicio de sesión exitoso! Bienvenido a MT Motors.");
 
-            // 2. Redirigir al index
-            // Usamos window.location.href para cambiar de página
+
             window.location.href = "/";
         }
     });
 }
-// Añade esto al final de tu script.js existente
+
 const registroForm = document.querySelector('.registro-form');
 
 if (registroForm) {
