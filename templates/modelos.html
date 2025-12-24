@@ -4,37 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MT | Modelos</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/png" href="imagenes/logo2.png" />
-    <link rel="stylesheet" href="css/modelos.css" />
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    <link rel="icon" type="image/png" href="../static/imagenes/logo2.png" />
+    <link rel="stylesheet" href="../static/css/modelos.css" />
   </head>
   <body>
    <header class="envoltura-cabezado">
         <figure id="logo">
-            <a href="index.html">
-                <img src="imagenes/logo6.png" alt="MT Motors Logo" width="300">
+            <a href="{{url_for('index')}}">
+                <img src="../static/imagenes/logo6.png" alt="MT Motors Logo" width="300">
             </a>
         </figure>
 
         <button id="hamburger" aria-label="Abrir menú">
-            <img src="imagenes/hambur-logo.png" alt="Menú" class="icono-hamburguesa">
+            <img src="../static/imagenes/hambur-logo.png" alt="Menú" class="icono-hamburguesa">
         </button>
         
         <nav id="navOficial">
             <ul>
                 <li>
-                    <a href="modelos.html" class="subtitulo-menu">
+                    <a href="{{url_for('modelos')}}" class="subtitulo-menu">
                         MODELOS
                     </a>
                 </li>
                 <li>
-                    <a href="cuenta.html" class="subtitulo-menu">INICIA SESIÓN</a>
+                    <a href="{{url_for('cuenta')}}" class="subtitulo-menu">INICIA SESIÓN</a>
                 </li>
                 <li>
-                    <a href="sucursales.html" class="subtitulo-menu">SUCURSALES</a>
+                    <a href="{{url_for('sucursales')}}" class="subtitulo-menu">SUCURSALES</a>
                 </li>
                 <li>
-                    <a href="contactos.html" class="subtitulo-menu">CONTACTOS</a>
+                    <a href="{{url_for('contactos')}}" class="subtitulo-menu">CONTACTOS</a>
                 </li>
             </ul>
         </nav>
@@ -42,7 +42,7 @@
     <main class="vehicle-models-container">
       <section class="vehicle-card">
         <div class="image-wrapper">
-          <img src="imagenes/Mazda CX90.png" alt="Imagen del MAZDA CX-90" />
+          <img src="../static/imagenes/Mazda CX90.png" alt="Imagen del MAZDA CX-90" />
         </div>
         <h2 class="vehicle-name">MT CX-90</h2>
 
@@ -55,7 +55,7 @@
       </section>
       <section class="vehicle-card">
         <div class="image-wrapper">
-          <img src="imagenes/Mazda CX60.png" alt="Imagen del MAZDA CX-60" />
+          <img src="../static/imagenes/Mazda CX60.png" alt="Imagen del MAZDA CX-60" />
         </div>
         <h2 class="vehicle-name">MT CX-60</h2>
         <p class="vehicle-price">Desde: USD$43,990 - S/ 158.364</p>
@@ -66,7 +66,7 @@
       </section>
       <section class="vehicle-card">
         <div class="image-wrapper">
-          <img src="imagenes/Mazda CX5.png" alt="Imagen del MAZDA CX-5" />
+          <img src="../static/imagenes/Mazda CX5.png" alt="Imagen del MAZDA CX-5" />
         </div>
         <h2 class="vehicle-name">MT CX-5</h2>
         <p class="vehicle-price">Desde: USD$27,290 - S/ 98.244</p>
@@ -77,7 +77,7 @@
       </section>
       <section class="vehicle-card">
         <div class="image-wrapper">
-          <img src="imagenes/Mazda CX30.png" alt="Imagen del MAZDA CX-30" />
+          <img src="../static/imagenes/Mazda CX30.png" alt="Imagen del MAZDA CX-30" />
         </div>
         <h2 class="vehicle-name">MT CX-30</h2>
         <p class="vehicle-price">Desde: USD$23,490 - S/ 84.564</p>
@@ -88,7 +88,7 @@
       </section>
       <section class="vehicle-card">
         <div class="image-wrapper">
-          <img src="imagenes/Mazda CX3.jpg" alt="Imagen del MAZDA CX-3" />
+          <img src="../static/imagenes/Mazda CX3.jpg" alt="Imagen del MAZDA CX-3" />
         </div>
         <h2 class="vehicle-name">MT CX-3</h2>
         <p class="vehicle-price">Desde: USD$22,640 - S/ 81.504</p>
@@ -99,7 +99,7 @@
       </section>
       <section class="vehicle-card">
         <div class="image-wrapper">
-          <img src="imagenes/Mazda BT50.webp" alt="Imagen del MAZDA BT-50" />
+          <img src="../static/imagenes/Mazda BT50.webp" alt="Imagen del MAZDA BT-50" />
         </div>
         <h2 class="vehicle-name">MT BT-50</h2>
         <p class="vehicle-price">Desde: USD$31,090 - S/ 115.033</p>
@@ -111,7 +111,7 @@
 
       <section class="vehicle-card">
         <div class="image-wrapper">
-          <img src="imagenes/Mazda MX5.png" alt="Imagen del MAZDA MX-5" />
+          <img src="../static/imagenes/Mazda MX5.png" alt="Imagen del MAZDA MX-5" />
         </div>
         <h2 class="vehicle-name">MT MX-5</h2>
         <p class="vehicle-price">Desde: USD$44,990 - S/ 161.964</p>
@@ -123,7 +123,7 @@
 
       <section class="vehicle-card">
         <div class="image-wrapper">
-          <img src="imagenes/Mazda 6.jpg" alt="Imagen del MAZDA 6" />
+          <img src="../static/imagenes/Mazda 6.jpg" alt="Imagen del MAZDA 6" />
         </div>
         <h2 class="vehicle-name">MT 6</h2>
         <p class="vehicle-price">Desde: USD$28,990 - S/ 104.364</p>
@@ -142,7 +142,7 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png" alt="YouTube" class="icon-social">
                     </a>
                     <a href="https://x.com/" target="_blank">
-                        <img src="imagenes/x-logo.png" alt="X" class="icon-social">
+                        <img src="../static/imagenes/x-logo.png" alt="X" class="icon-social">
                     </a>
                     <a href="https://www.facebook.com/" target="_blank">
                         <img src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png" alt="Facebook" class="icon-social">
@@ -160,7 +160,7 @@
             <div id="derechos">
                 <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
                 <div id="deco-logo">
-                    <img src="imagenes/derco.png" alt="logo-derco">
+                    <img src="../static/imagenes/derco.png" alt="logo-derco">
                 </div>
             </div>
         </div>
@@ -196,8 +196,8 @@
             </div>
         </div>
     </div>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/modelos.js"></script>
+    <script src="../static/scripts/script.js"></script>
+    <script src="../static/scripts/modelos.js"></script>
     
   </body>
 </html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MT | Autos Nuevos</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="../static/imagenes/logo2.png" />
+  <link rel="stylesheet" href="../static/css/styles.css" />
+  <link rel="stylesheet" href="../static/css/Inicio.css" />
+</head>
+
+<body>
+  <header class="envoltura-cabezado">
+    <figure id="logo">
+      <a href="{{url_for('index')}}">
+        <img src="../static/imagenes/logo6.png" alt="MT Motors Logo" width="300">
+      </a>
+    </figure>
+
+    <button id="hamburger" aria-label="Abrir menú">
+      <img src="../static/imagenes/hambur-logo.png" alt="Menú" class="icono-hamburguesa">
+    </button>
+
+    <nav id="navOficial">
+      <ul>
+        <li>
+          <a href="{{url_for('modelos')}}" class="subtitulo-menu">
+            MODELOS
+          </a>
+        </li>
+        <li>
+          <a href="{{url_for('cuenta')}}" class="subtitulo-menu">INICIA SESIÓN</a>
+        </li>
+        <li>
+          <a href="{{url_for('sucursales')}}" class="subtitulo-menu">SUCURSALES</a>
+        </li>
+        <li>
+          <a href="{{url_for('contactos')}}" class="subtitulo-menu">CONTACTOS</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="Intro">
+      <div class="Fondo">
+        <img src="../static/imagenes/Mazda segundo modelo.webp" alt="Mazda" />
+      </div>
+      <div class="Saludo">
+        <h2>¿QUIENES SOMOS?</h2>
+        <p>
+          MT Motors es una empresa líder en la venta de automóviles en el
+          país, <br />
+          reconocida por su compromiso con la calidad, la innovación y la
+          satisfacción del cliente. <br />
+          Nos destacamos por ofrecer una amplia variedad de vehículos
+          modernos, seguros y eficientes, <br />
+          adaptados a las necesidades de cada persona. En MT Motors, creemos
+          que cada auto cuenta una historia,<br />
+          y trabajamos día a día para que nuestros clientes encuentren el
+          vehículo perfecto para comenzar la suya. <br />
+          Con una atención personalizada y un servicio posventa de primer
+          nivel, somos considerados la mejor empresa automotriz del país,
+          <br />
+          símbolo de confianza, elegancia y desempeño en cada kilómetro
+          recorrido.
+        </p>
+        <a href="{{url_for('modelos')}}" class="btn-cotizar">COTIZA AHORA</a>
+      </div>
+    </div>
+    <section class="reseñas">
+      <h2>LO QUE DICEN NUESTROS CLIENTES</h2>
+      <div class="contenedor-reseñas">
+        <div class="card-reseña">
+          <p class="comentario">
+            “Excelente atención desde el primer momento. Me ayudaron a elegir el
+            auto perfecto para mi familia.”
+          </p>
+          <p class="cliente">⭐⭐⭐⭐⭐<br />Carlos R. – Lima</p>
+        </div>
+        <div class="card-reseña">
+          <p class="comentario">
+            “Muy profesionales y transparentes. El proceso de compra fue rápido y
+            seguro.”
+          </p>
+          <p class="cliente">⭐⭐⭐⭐⭐<br />María G. – Arequipa</p>
+        </div>
+        <div class="card-reseña">
+          <p class="comentario">
+            “Recomiendo MT Motors al 100%. Gran variedad de modelos y excelente
+            servicio postventa.”
+          </p>
+          <p class="cliente">⭐⭐⭐⭐⭐<br />Luis P. – Trujillo</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pie-pagina">
+    <div class="footer-contenedor">
+      <div id="visitanos-en">
+        <p>Visítanos también en:</p>
+        <div id="hipervinculos-extra">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png" alt="YouTube" class="icon-social">
+          </a>
+          <a href="https://x.com/" target="_blank">
+            <img src="../static/imagenes/x-logo.png" alt="X" class="icon-social">
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png"
+              alt="Facebook" class="icon-social">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png" alt="Instagram" class="icon-social">
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670299.png" alt="TikTok" class="icon-social">
+          </a>
+        </div>
+      </div>
+
+      <hr class="separador-footer">
+      <div id="derechos">
+        <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
+        <div id="deco-logo">
+          <img src="../static/imagenes/derco.png" alt="logo-derco">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../static/scripts/script.js"></script>
+</body>
+
+</html>

@@ -4,37 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MT | Formulario</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/contactos.css" />
-    <link rel="icon" type="image/png" href="imagenes/logo2.png" />
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    <link rel="stylesheet" href="../static/css/contactos.css" />
+    <link rel="icon" type="image/png" href="../static/imagenes/logo2.png" />
   </head>
   <body>
     <header class="envoltura-cabezado">
         <figure id="logo">
-            <a href="index.html">
-                <img src="imagenes/logo6.png" alt="MT Motors Logo" width="300">
+            <a href="{{url_for('index')}}">
+                <img src="../static/imagenes/logo6.png" alt="MT Motors Logo" width="300">
             </a>
         </figure>
 
         <button id="hamburger" aria-label="Abrir menú">
-            <img src="imagenes/hambur-logo.png" alt="Menú" class="icono-hamburguesa">
+            <img src="../static/imagenes/hambur-logo.png" alt="Menú" class="icono-hamburguesa">
         </button>
         
         <nav id="navOficial">
             <ul>
                 <li>
-                    <a href="modelos.html" class="subtitulo-menu">
+                    <a href="{{url_for('modelos')}}" class="subtitulo-menu">
                         MODELOS
                     </a>
                 </li>
                 <li>
-                    <a href="cuenta.html" class="subtitulo-menu">INICIA SESIÓN</a>
+                    <a href="{{url_for('cuenta')}}" class="subtitulo-menu">INICIA SESIÓN</a>
                 </li>
                 <li>
-                    <a href="sucursales.html" class="subtitulo-menu">SUCURSALES</a>
+                    <a href="{{url_for('sucursales')}}" class="subtitulo-menu">SUCURSALES</a>
                 </li>
                 <li>
-                    <a href="contactos.html" class="subtitulo-menu">CONTACTOS</a>
+                    <a href="{{url_for('contactos')}}" class="subtitulo-menu">CONTACTOS</a>
                 </li>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
       <article>
         <div class="formulario-logo">
           <picture class="formulario-imagen">
-            <img src="imagenes/carro-naranja.jpg" alt="carro" />
+            <img src="../static/imagenes/carro-naranja.jpg" alt="carro" />
           </picture>
           <div class="encabezado-formulario">
             <h1>FORMULARIO DE CONTACTO</h1>
@@ -205,7 +205,7 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/4401/4401475.png" alt="YouTube" class="icon-social">
                     </a>
                     <a href="https://x.com/" target="_blank">
-                        <img src="imagenes/x-logo.png" alt="X" class="icon-social">
+                        <img src="../static/imagenes/x-logo.png" alt="X" class="icon-social">
                     </a>
                     <a href="https://www.facebook.com/" target="_blank">
                         <img src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Transparent-Image.png" alt="Facebook" class="icon-social">
@@ -223,12 +223,12 @@
             <div id="derechos">
                 <p>&copy; 2025 MT MOTORS PERÚ - TODOS LOS DERECHOS RESERVADOS</p>
                 <div id="deco-logo">
-                    <img src="imagenes/derco.png" alt="logo-derco">
+                    <img src="../static/imagenes/derco.png" alt="logo-derco">
                 </div>
             </div>
         </div>
     </footer>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/contacto.js"></script>
+    <script src="../static/scripts/script.js"></script>
+    <script src="../static/scripts/contacto.js"></script>
   </body>
 </html>
